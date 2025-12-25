@@ -164,7 +164,7 @@ if prompt is not None:
                     if content_item["type"] == "input_text":
                         st.markdown(content_item["text"])
                     elif content_item["type"] == "input_image":
-                        st.image(content_item["image_url"]['url'],width=100)
+                        st.image(content_item["image_url"], width=100)
                     else:
                         st.error(f"Unkown content type: {content_item['type']}")
 
